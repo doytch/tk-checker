@@ -1,0 +1,8 @@
+/**
+ * All of the CSS for your dashboard-specific functionality should be
+ * included in this file.
+ */
+
+ .tk-text, .tk-settings-text {
+ 	width: 100%;
+ }
