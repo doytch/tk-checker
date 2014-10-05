@@ -108,7 +108,7 @@ function findTKs() {
 
 $(function() {
 	$('#publish').click(function() {
-		if ($(this).val() == 'Publish' && TK_COUNT > 0) {
+		if (TK_COUNT > 0) {
 			return confirm(TK_I18N['confirmPublishPrompt']);
 		}
 	});
