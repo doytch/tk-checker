@@ -32,7 +32,7 @@ class TKCheckerActivator {
 	public static function activate() {
 		$default_settings = array(
 			'wildcard'				=> 'TK',
-			'excerpt_length' 		=> 30,
+			'excerpt_length' 		=> 60,
 			'no_tks_text'			=> 'Research is all done!'
 		);
 		update_option('tk_settings', $default_settings);
