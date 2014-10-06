@@ -14,7 +14,7 @@
  *
  * @wordpress-plugin
  * Plugin Name:       TK Checker
- * Plugin URI:        http://qedev.com
+ * Plugin URI:        http://tkchecker.com
  * Description:       Write now. Research later.
  * Version:           1.0.0
  * Author:            QEDev

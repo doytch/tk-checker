@@ -72,7 +72,7 @@ class TKCheckerAdmin {
 		wp_enqueue_script( $this->name, plugin_dir_url( __FILE__ ) . 'js/admin.js', array( 'jquery' ), $this->version, false );
 		wp_localize_script($this->name, 'TK_SETTINGS', get_option('tk_settings'));
 		wp_localize_script($this->name, 'TK_I18N', array(
-			'confirmPublishPrompt' => __("There are still TKs in the text. Are you sure you want to publish?", $this->name)
+			'confirmPublishPrompt' => __("There are still facts to check in your post. Are you sure you want to publish?", $this->name)
 		));
 
 	}
@@ -96,9 +96,11 @@ class TKCheckerAdmin {
 	 * @var      string    $post_type    Post type.
 	 */
 	public function add_meta_boxes($post_type) {
+		$settings = get_option('tk_settings');
+		$wildcard = $settings['wildcard'];
 		add_meta_box(
 			'tk_mb',
-			__('TKs', $this->name),
+			__("TK Checker - '{$wildcard}' Summary", $this->name),
 			array($this, 'render_meta_box'),
 			'post'
 		);
