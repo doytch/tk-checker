@@ -16,7 +16,7 @@
 <!-- This file should primarily consist of HTML with a little bit of PHP. -->
 
 <div class="wrap">
-<h2>Mercury Settings</h2>
+<h2>TK Checker Settings</h2>
 	<form method="post" action="options.php">
 		<?php settings_fields('tk_settings'); ?>
 		<?php do_settings_sections('tk-checker/admin/views/settings.php'); ?>

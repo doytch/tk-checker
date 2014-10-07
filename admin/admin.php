@@ -285,7 +285,7 @@ class TKCheckerAdmin {
 				array(
 					'id' => 'wildcard',
 					'label' => __('Wildcard', $this->name),
-					'desc' => __('The text string that you use to indicate a "To Come." You will be prompted to replace these.', $this->name),
+					'desc' => __('The text string that you use to mark locations in your posts where info is still to come.', $this->name),
 					'type' => 'text'
 				), array(
 					'id' => 'excerpt_length',

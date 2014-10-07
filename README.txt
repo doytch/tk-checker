@@ -1,114 +1,91 @@
-=== Plugin Name ===
-Contributors: Doytch
-Donate link: http://example.com/
-Tags: comments, spam
-Requires at least: 3.0.1
-Tested up to: 3.4
-Stable tag: 4.3
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+=== TK Checker Plugin ===
+Contributors: Doytch, Helen842000
+Purchase link: http://www.tkchecker.com
+Tags: facts, research, tk, fact checking, productivity, writing, find & replace, To Kome,
+Requires at least: 3.9
+Tested up to: 4.0
 
-Here is a short description of the plugin.  This should be no more than 150 characters.  No markup here.
+
+Write now. Research Later. The TK Checker plugin is a productivity tool for writers that summarises the places in your posts that you have marked to re-visit. This separates writing from research and makes adding in missing information easier.
 
 == Description ==
 
-This is the long description.  No limit, and you can use Markdown (as well as in the following sections).
+Authors & journalists regularly use a temporary marker like TK in their writing where information is missing. For example :-
 
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and
-Markdown parsed.
+"The Eiffel Tower is TK metres tall" or "His shirt was a vibrant TK colour" or "Visit our website at TK"
 
-A few notes about the sections above:
+This marks the spot where a fact needs to be researched, descriptive words need to be considered or links, addresses and phone numbers need to be verified.
 
-*   "Contributors" is a comma separated list of wp.org/wp-plugins.org usernames
-*   "Tags" is a comma separated list of tags that apply to the plugin
-*   "Requires at least" is the lowest version that the plugin will work on
-*   "Tested up to" is the highest version that you've *successfully used to test the plugin*. Note that it might work on
-higher versions... this is just the highest one you've verified.
-*   Stable tag should indicate the Subversion "tag" of the latest stable version, or "trunk," if you use `/trunk/` for
-stable.
+They are all points in a document that will need to be revisited before publishing. This method helps writers to stay in the zone & get the general core concept of their piece written without getting lost in research or fact checking. It helps writers to move through blocks and save the final details to the end. 
 
-    Note that the `readme.txt` of the stable tag is the one that is considered the defining one for the plugin, so
-if the `/trunk/readme.txt` file says that the stable tag is `4.3`, then it is `/tags/4.3/readme.txt` that'll be used
-for displaying information about the plugin.  In this situation, the only thing considered from the trunk `readme.txt`
-is the stable tag pointer.  Thus, if you develop in trunk, you can update the trunk `readme.txt` to reflect changes in
-your in-development version, without having that information incorrectly disclosed about the current stable version
-that lacks those changes -- as long as the trunk's `readme.txt` points to the correct stable tag.
+Once you have finished your article, you then have to revisit each marker in the document and replace it with the missing information. When this is done by hand it's often easy to miss the occasional item, authors become blind to their chosen marker and articles often get published with TK's still in place.
 
-    If no stable tag is provided, it is assumed that trunk is stable, but you should specify "trunk" if that's where
-you put the stable version, in order to eliminate any doubt.
+This is where TK Checker comes in. 
+
+When logged into your WordPress site, underneath each 'Edit Post' window TK Checker will summarise all of the locations within your document where information is missing and provide you with a list of what you need to go and research. No more manual find & replace. 
+
+TK Checker allows you to set your own marker e.g TK, QQ or anything you like. 
+
+The plugin also allows for 2 way editing. You can edit in summary box & your main post will update. You can edit your post & the summary box will update. 
+
+TK Checker will tell you when all of your research is complete. 
+
+It will even warn you if you try to publish with markers still in the post! 
 
 == Installation ==
 
-This section describes how to install the plugin and get it working.
+This section describes how to install TK Checker and get it working.
 
-e.g.
-
-1. Upload `plugin-name.php` to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Place `<?php do_action('plugin_name_hook'); ?>` in your templates
+1. Download the TK Checker to your computer 
+2. In the 'Plugins' menu in WordPress select Add New 
+3. Click the Upload Plugin button
+4. Click Browse and point it to where you have saved the download on your computer 
+5. Activate the plugin through the 'Plugins' menu in WordPress
+6. Go into TK Checker settings to set your wildcard character, length & default text
+7. Save your plugin settings
+8. Start writing a new post and you will see your summary box below the edit post window.
 
 == Frequently Asked Questions ==
 
-= A question that someone might have =
+= Do I have to use TK as my marker? =
 
-An answer to that question.
+No, not at all. TK is mainly used because it appears infrequently throughout in the English language. With the TK Checker plugin you can use any string of characters. Touchtypers tend to use QQ. Other common markers include // <> and ** - whatever you choose make sure it is reasonably unique and won't naturally appear in the body of your text.
 
-= What about foo bar? =
+= So then, how often does TK appear in the English language? =
 
-Answer to foo bar dilemma.
+Not often. If you are writing about any of the following things it would be best to use another wildcard character.
+Atkins, Atkinson, catkin, catkins, giantkiller, Kamchatka, Kropotkin, latke, latkes, outkeep, outkeeping, outkeeps, outkept, outkick, outkicked, outkicking, outkicks, outkill, outkilled, outkilling, outkills, outkiss, outkissed, outkisses, outkissing, pocketknife, pocketknives, Watkins, wicketkeeper, wicketkeepers, wicketkeeping
 
-== Screenshots ==
+= Is TK Checker case sensitive? =
 
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
-directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
-(or jpg, jpeg, gif).
-2. This is the second screen shot
+Yes it is! Example :- If you set your wildcard to be tk it will NOT find instances of TK and vice versa. 
+
+= Does my wildcard need spaces before & after it? =
+
+No, it will find your wildcard both with and without spaces. 
+
+= Can I use 2 different wildcards? =
+
+You can change your wildcard marker at any time but you cannot search on 2 strings at once.
+It only finds what the wildcard setting is currently set to.
+If you have 2 draft post and one uses TK and one uses QQ you will need to change the wildcard in the settings to match the post you are working on. Ideally stick to one wildcard marker and use that for all posts. 
+
+= Does TK Checker work on Pages? =
+
+TK Checker works on Posts currently. Although you can copy any kind of info into a draft Post and have it check for missing info. 
+Then it can be copied over to a page or other document ready for publishing. 
+
 
 == Changelog ==
 
-= 1.0 =
-* A change since the previous version.
-* Another change.
+= V1.0 Features=
+* Settings - Set Wildcard character, summary length & default text
+* Two Way editing - Edit Post & the Summary Box will update. Edit the summary box & the post will update
+* Alert if trying to publish with markers still showing in the post
+* Current wildcard characters show in the header of the summary box
 
-= 0.5 =
-* List versions from most recent at top to oldest at bottom.
 
-== Upgrade Notice ==
+== Credits & Info ==
 
-= 1.0 =
-Upgrade notices describe the reason a user should upgrade.  No more than 300 characters.
-
-= 0.5 =
-This version fixes a security related bug.  Upgrade immediately.
-
-== Arbitrary section ==
-
-You may provide arbitrary sections, in the same format as the ones above.  This may be of use for extremely complicated
-plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
-"installation."  Arbitrary sections will be shown below the built-in sections outlined above.
-
-== A brief Markdown Example ==
-
-Ordered list:
-
-1. Some feature
-1. Another feature
-1. Something else about the plugin
-
-Unordered list:
-
-* something
-* something else
-* third thing
-
-Here's a link to [WordPress](http://wordpress.org/ "Your favorite software") and one to [Markdown's Syntax Documentation][markdown syntax].
-Titles are optional, naturally.
-
-[markdown syntax]: http://daringfireball.net/projects/markdown/syntax
-            "Markdown is what the parser uses to process much of the readme file"
-
-Markdown uses email style notation for blockquotes and I've been told:
-> Asterisks for *emphasis*. Double it up  for **strong**.
-
-`<?php code(); // goes in backticks ?>`
+Thank you for purchasing TK Checker. Any updated versions will be automatically sent to our customers via e-mail. 
+If you have any questions or feedback please use the contact form on TKChecker.com
