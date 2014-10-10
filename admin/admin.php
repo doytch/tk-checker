@@ -235,7 +235,8 @@ class TKCheckerAdmin {
  	public function render_settings_text($args) {
 		$id = $args['id'];
 		$desc = isset($args['desc']) ? $args['desc'] : '';
-		$val = get_option('tk_settings')[$id];
+		$options = get_option('tk_settings');
+		$val = $options[$id];
 		echo "<input name='tk_settings[{$id}]' type='text' class='tk-settings-text' value='{$val}'/>";
 		echo "<p>{$desc}</p>";
 	}
